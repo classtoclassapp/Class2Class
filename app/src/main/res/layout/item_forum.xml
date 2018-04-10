@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- postitem.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorPrimary">
+
+    <!--IMAGEN -->
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/book"
+        android:layout_marginRight="15dp"/>
+
+    <!-- LINEA 1 ******************************************************************************* -->
+    <TextView
+        android:id="@+id/textAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagen"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxygen"
+        android:maxLines="1"
+        android:text="Autor:"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textAutor"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxygen"
+        android:maxLines="1"
+        android:text="jgonzalez199"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="10sp" />
+
+    <!-- LINEA 2 ******************************************************************************* -->
+
+    <TextView
+        android:id="@+id/textContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAutor"
+        android:layout_toRightOf="@id/imagen"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxygen"
+        android:maxLines="1"
+        android:text="Teléfono de contacto:"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textContacto"
+        android:layout_alignBottom="@+id/textContacto"
+        android:layout_toEndOf="@+id/textContacto"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxygen"
+        android:maxLines="1"
+        android:text="688647601"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="10sp" />
+
+    <!-- LINEA 3 ******************************************************************************* -->
+
+    <TextView
+        android:id="@+id/anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContacto"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imagen"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxygen"
+        android:maxLines="1"
+        android:text="Vendo apuntes de todo porque meca"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="11sp" />
+
+</RelativeLayout>
